@@ -38,7 +38,8 @@ body * {
 }
 
 #container {
-  width: 33vw;
+  width: 80%;
+  max-width: 460px;
   /* border: 1px solid white; */
   margin: 5vh auto auto auto;
   padding: 0 2vw;
@@ -46,7 +47,7 @@ body * {
 
 #profile {
   text-align: center;
-  padding: 7vw;
+  padding: 18% 0;
 }
 
 #profile p {
