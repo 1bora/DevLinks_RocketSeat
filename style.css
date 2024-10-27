@@ -58,23 +58,23 @@ body * {
 
 #switch {
   position: relative;
-  width: 3vw;
-
+  width: 64px;
   margin: 4px auto;
 }
 
 #switch button {
-  height: 1.7vw;
-  width: 1.7vw;
+  height: 32px;
+  width: 32px;
   background: white var(--switch-bg-url) no-repeat center;
   background-size: 20px;
   border: 0;
   border-radius: 50%;
 
   position: absolute;
+  top: 50%;
   left: 0;
   z-index: 1;
-  transform: translateY(-22%);
+  transform: translateY(-50%);
 }
 
 .light #switch button {
@@ -84,8 +84,8 @@ body * {
 
 #switch span {
   display: block;
-  width: 3vw;
-  height: 2vh;
+  width: 64px;
+  height: 24px;
   background: var(--surface-color);
   border: 1px solid var(--stroke-color);
   backdrop-filter: blur(4px);
@@ -97,7 +97,7 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 2vh;
-  padding: 1vw 0;
+  padding: 5% 0;
 }
 
 ul li a {
@@ -125,17 +125,16 @@ ul li a:hover {
 #social-links {
   display: flex;
   justify-content: center;
-  gap: 1.4vw;
-  padding: 2vw;
-
-  font-size: 1.4vw;
+  gap: 3%;
+  padding: 2.5%;
+  font-size: 32px;
 }
 
 #social-links a {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1vw;
+  padding: 12px;
   transition: background 0.2s;
   border-radius: 50%;
 }
@@ -145,7 +144,7 @@ ul li a:hover {
 }
 
 footer {
-  padding: 1vw 0;
+  padding: 5% 0;
   text-align: center;
   font-size: 14px;
 }
