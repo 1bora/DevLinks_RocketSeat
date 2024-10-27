@@ -31,6 +31,8 @@ body {
     background-size: cover; */
 
   background: var(--bg-url) no-repeat top center/cover;
+
+  height: 100vh;
 }
 body * {
   font-family: "Inter", sans-serif;
@@ -75,13 +77,16 @@ body * {
   left: 0;
   z-index: 1;
   transform: translateY(-50%);
+  animation: slide_toggle_out 0.5s;
 }
 
 .light #switch button {
-  right: 0;
-  left: initial;
+  animation: slide_toggle_in 0.5s forwards;
 }
 
+#switch button:hover {
+  outline: 8px solid var(--higlight-color);
+}
 #switch span {
   display: block;
   width: 64px;
@@ -147,4 +152,33 @@ footer {
   padding: 5% 0;
   text-align: center;
   font-size: 14px;
+}
+/*media queries*/
+
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
+}
+/*animacoes*/
+
+@keyframes slide_toggle_in {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slide_toggle_out {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
+  }
 }
